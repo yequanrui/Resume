@@ -2,7 +2,7 @@
 if (!String.prototype.format) {
   String.prototype.format = function() {
     var args = arguments;
-    return this.replace(/{(\d+)}/g, function(match, number) { 
+    return this.replace(/{(\d+)}/g, function(match, number) {
       return typeof args[number] != 'undefined'
         ? args[number]
         : match
@@ -22,13 +22,12 @@ jQuery(document).ready(function($) {
     $("#username").attr('contenteditable', 'true');
     $("#persona-tag").attr('contenteditable', 'true');
     $(".info-unit ul li").append('<span class="item-remove"><i class="iconfont icon-delete"></i></span>');
-    
+
     $(".info-unit").filter(function(index) {
         return ($(this).children('ul').length);
     }).children("h2").append('<span class="item-add"><i class="iconfont icon-playlistadd"></i></span>');
 
     $(".info-unit h2").append('<span class="unit-remove"><i class="iconfont icon-delete"></i></span>');
-    
 
     var portrait_modal = $('[data-remodal-id=portrait-modal]').remodal();
     $(".portrait").click(function(event) {
@@ -80,11 +79,10 @@ jQuery(document).ready(function($) {
             var clone = list.children('li:first-child').clone(true);
             list.append(clone);
         }
-
     });
+
     $("progress").click(function(event) {
         $(this).attr("value", event.offsetX/$(this).width()/0.8 * $(this).attr("max"));
     });
     // $("*").removeAttr('contenteditable');
-
 });
