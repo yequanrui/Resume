@@ -1,63 +1,61 @@
 @font-face {
-  font-family: "iconfont";
-  src: url("../fonts/iconfont.eot"); /* IE9*/
-  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/iconfont.woff") format("woff"),
-    /* chrome、firefox */ url("../fonts/iconfont.ttf") format("truetype"),
-    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-      url("../fonts/iconfont.svg#iconfont") format("svg"); /* iOS 4.1- */
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.eot'); /* IE9*/
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/iconfont.woff') format('woff'),
+    /* chrome、firefox */ url('../fonts/iconfont.ttf') format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .icon-work:before {
-  content: "\eac9";
+  content: '\eac9';
 }
 .icon-project:before {
-  content: "\eaf4";
+  content: '\eaf4';
 }
 .icon-phone:before {
-  content: "\ec7a";
+  content: '\ec7a';
 }
 .icon-stars:before {
-  content: "\ed32";
+  content: '\ed32';
 }
 .icon-star:before {
-  content: "\ed1d";
+  content: '\ed1d';
 }
 .icon-person:before {
-  content: "\ec88";
+  content: '\ec88';
 }
 .icon-librarybooks:before {
-  content: "\ebf9";
+  content: '\ebf9';
 }
 .icon-education:before {
-  content: "\ebca";
+  content: '\ebca';
 }
 .icon-create:before {
-  content: "\eaf8";
+  content: '\eaf8';
 }
 .icon-call:before {
-  content: "\eab6";
+  content: '\eab6';
 }
 .icon-weixin:before {
-  content: "\3488";
+  content: '\3488';
 }
 .icon-build:before {
-  content: "\eaa2";
+  content: '\eaa2';
 }
 .icon-edit:before {
-  content: "\eb31";
+  content: '\eb31';
 }
 .icon-flower:before {
-  content: "\ec0a";
+  content: '\ec0a';
 }
 .icon-playlistadd:before {
-  content: "\ecae";
+  content: '\ecae';
 }
 .icon-delete:before {
-  content: "\e61b";
+  content: '\e61b';
 }
 .icon-trophy:before {
-  content: "\e80b";
+  content: '\e80b';
 }
 
 span {
@@ -70,7 +68,7 @@ span {
 }
 
 .iconfont {
-  font-family: "iconfont" !important;
+  font-family: 'iconfont' !important;
   font-size: 1.1em;
   font-style: normal;
   color: inherit;
@@ -157,12 +155,9 @@ hr {
 }
 
 body {
-  background-image: url(../../static/image/bg.png);
+  background-image: url(../../static/image/bg.jpg);
+  background-size: 100% 100%;
   font-family: sans-serif, Microsoft Yahei, Helvetica Neue;
-  zoom: 80%;
-}
-
-footer {
 }
 
 p {
@@ -172,7 +167,6 @@ p {
 progress {
   background-color: #f6f6f6;
   display: inline;
-  /*width: 195px;*/
   height: 1em;
 }
 
@@ -304,7 +298,7 @@ ul li {
 .stack-list .item-remove {
   position: absolute;
   right: 2px;
-  top: 0px;
+  top: 0;
   margin-right: 2px;
   visibility: hidden;
   cursor: pointer;
